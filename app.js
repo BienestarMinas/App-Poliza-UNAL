@@ -60,9 +60,9 @@ function agregarDatosIniciales() {
 
 // Service Worker para habilitar el modo offline
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-    .then(reg => console.log('Service Worker registrado con éxito:', reg))
-    .catch(err => console.log('Error al registrar el Service Worker:', err));
+    navigator.serviceWorker.register('/PWA-Bienestar-emergencias/sw.js')
+        .then(reg => console.log('Service Worker registrado:', reg))
+        .catch(err => console.error('Error al registrar el Service Worker:', err));
 }
 
 // Función para eliminar acentos

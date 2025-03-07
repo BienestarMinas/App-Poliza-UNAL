@@ -1,9 +1,11 @@
 const CACHE_NAME = 'emergencias-cache-v1';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/styles.css',
-    '/app.js'
+    "/PWA-Bienestar-emergencias/",
+    "/PWA-Bienestar-emergencias/index.html",
+    "/PWA-Bienestar-emergencias/styles.css",
+    "/PWA-Bienestar-emergencias/app.js",
+    "/PWA-Bienestar-emergencias/manifest.json",
+    "/PWA-Bienestar-emergencias/unal.png"
 ];
 
 self.addEventListener('install', (event) => {
