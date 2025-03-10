@@ -1,11 +1,11 @@
-const CACHE_NAME = "pwa-cache-v1.3"; // Cambia el número en cada actualización
+const CACHE_NAME = "pwa-cache-v1.4"; // Cambia el número en cada actualización
 const urlsToCache = [
-    "/",
-    "/index.html",
-    "/styles.css",
-    "/app.js",
-    "/manifest.json",
-    "/unal.png"
+    "/PWA-Bienestar-emergencias/",
+    "/PWA-Bienestar-emergencias/index.html",
+    "/PWA-Bienestar-emergencias/styles.css",
+    "/PWA-Bienestar-emergencias/app.js",
+    "/PWA-Bienestar-emergencias/manifest.json",
+    "/PWA-Bienestar-emergencias/unal.png"
 ];
 
 self.addEventListener("install", (event) => {
