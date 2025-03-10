@@ -61,3 +61,55 @@ input[type="text"]:focus {
     color: white;
     transform: scale(1.05);
 }
+
+/* Estilos para los resultados de lugares */
+.lugar {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.lugar:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Nombre del lugar */
+.lugar-nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Dirección */
+.lugar-direccion {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Teléfono con enlace */
+.lugar-telefono {
+    display: block;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+/* Enlace de teléfono */
+.telefono-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.telefono-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}

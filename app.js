@@ -61,9 +61,21 @@ function agregarDatosIniciales() {
 // Service Worker para habilitar el modo offline
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/PWA-Bienestar-emergencias/sw.js')
-        .then(reg => console.log('Service Worker registrado:', reg))
+        .then(reg => {
+            console.log('Service Worker registrado:', reg);
+            
+            reg.addEventListener('updatefound', () => {
+                const newWorker = reg.installing;
+                newWorker.addEventListener('statechange', () => {
+                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                        alert("Hay una nueva versión disponible. Recarga la página para actualizar.");
+                    }
+                });
+            });
+        })
         .catch(err => console.error('Error al registrar el Service Worker:', err));
 }
+
 
 // Función para eliminar acentos
 function normalizarTexto(texto) {
