@@ -1,6 +1,6 @@
 {
-    "name": "Lugares de Emergencia UNAL",
-    "short_name": "Emergencias UNAL",
+    "name": "Poliza Emergencia UNAL",
+    "short_name": "Poliza UNAL",
     "start_url": "/PWA-Bienestar-emergencias/",
     "display": "standalone",
     "background_color": "#ffffff",
