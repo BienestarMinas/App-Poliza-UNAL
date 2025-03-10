@@ -60,22 +60,21 @@ function agregarDatosIniciales() {
 
 // Service Worker para habilitar el modo offline
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-        .then(reg => {
-            console.log('Service Worker registrado:', reg);
-            
-            reg.addEventListener('updatefound', () => {
-                const newWorker = reg.installing;
-                newWorker.addEventListener('statechange', () => {
+    navigator.serviceWorker.register('/PWA-Bienestar-emergencias/sw.js')
+        .then(registration => {
+            registration.onupdatefound = () => {
+                const newWorker = registration.installing;
+                newWorker.onstatechange = () => {
                     if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                        alert("Hay una nueva versión disponible. Recarga la página para actualizar.");
+                        console.log("Nueva versión disponible, recargando...");
+                        window.location.reload();
                     }
-                });
-            });
-        })
-        .catch(err => console.error('Error al registrar el Service Worker:', err));
+                };
+            };
+        }).catch(err => console.error('Error al registrar el Service Worker:', err));
 }
-
+    
+    
 
 // Función para eliminar acentos
 function normalizarTexto(texto) {
