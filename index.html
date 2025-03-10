@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Emergencias UNAL</title>
-        <link rel="manifest" href="/PWA-Bienestar-emergencias/manifest.json">
-        <link rel="stylesheet" href="/PWA-Bienestar-emergencias/styles.css">
-        <script defer src="/PWA-Bienestar-emergencias/app.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergencias UNAL</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+    <script defer>
+        function cambiarSeccion(seccion) {
+            document.getElementById('contactos').style.display = (seccion === 'contactos') ? 'block' : 'none';
+            document.getElementById('informacion').style.display = (seccion === 'informacion') ? 'block' : 'none';
+        }
+    </script>
+</head>
 <body>
-    <h1>Contactos de Emergencia</h1>
-    <input type="text" id="busqueda" placeholder="Buscar lugar...">
-    <div id="lista"></div>
+
+    <!-- Selector de pestañas -->
+    <div class="radio-inputs">
+        <label class="radio">
+            <input type="radio" name="pestaña" checked onclick="cambiarSeccion('contactos')">
+            <span class="name">Contactos</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="pestaña" onclick="cambiarSeccion('informacion')">
+            <span class="name">Otras localidades</span>
+        </label>
+    </div>
+
+    <!-- Sección de contactos -->
+    <div id="contactos">
+        <h1>Contactos de Emergencia</h1>
+        <input type="text" id="busqueda" placeholder="Buscar lugar...">
+        <div id="lista"></div>
+    </div>
+
+    <!-- Sección de información adicional -->
+    <div id="informacion" style="display: none;">
+        <h1>Atención en otras localidades</h1>
+        <p>En los eventos de estudiantes que necesitan atención en otra localidad diferente a Medellín y dentro del departamento de Antioquía, por favor comunicarse a las líneas de atención:</p>
+        <p class="telefonos">
+            📞 <a href="tel:6013307000" class="telefono-link">601 330 7000</a> - 
+            📞 <a href="tel:#533" class="telefono-link">#533 opción 4</a> o 
+            📞 <a href="tel:3204948156" class="telefono-link">320 494 8156</a> – 
+            📞 <a href="tel:3158862282" class="telefono-link">315 886 2282</a>
+        </p>
+    </div>
+
 </body>
 </html>

@@ -60,7 +60,7 @@ function agregarDatosIniciales() {
 
 // Service Worker para habilitar el modo offline
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/PWA-Bienestar-emergencias/sw.js')
+    navigator.serviceWorker.register('/sw.js')
         .then(reg => {
             console.log('Service Worker registrado:', reg);
             

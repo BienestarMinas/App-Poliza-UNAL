@@ -113,3 +113,42 @@ input[type="text"]:focus {
     text-decoration: underline;
     color: #0056b3;
 }
+
+/* Estilos para los botones tipo radio como pestañas */
+.radio-inputs {
+    display: flex;
+    justify-content: center;
+    background-color: #EEE;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    width: 320px;
+    margin: 20px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.radio {
+    flex: 1;
+    text-align: center;
+}
+
+.radio input {
+    display: none;
+}
+
+.radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    color: #333;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.radio input:checked + .name {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
