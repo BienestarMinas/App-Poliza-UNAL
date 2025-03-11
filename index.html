@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergencias UNAL</title>
-    <link rel="manifest" href="/PWA-Bienestar-emergencias/manifest.json">
-    <link rel="stylesheet" href="/PWA-Bienestar-emergencias/styles.css">
-    <script defer src="/PWA-Bienestar-emergencias/app.js"></script>
+    <link rel="manifest" href="/App-Poliza-UNAL/manifest.json">
+    <link rel="stylesheet" href="/App-Poliza-UNAL/styles.css">
+    <script defer src="/App-Poliza-UNAL/app.js"></script>
     <script defer>
         function cambiarSeccion(seccion) {
             document.getElementById('contactos').style.display = (seccion === 'contactos') ? 'block' : 'none';
@@ -31,26 +31,37 @@
     <!-- Sección de contactos -->
     <div id="contactos">
         <h1>Poliza de Emergencia UNAL Positiva</h1>
-        <input type="text" id="busqueda" placeholder="Buscar lugar...">
         <p>1. Si la condición del estudiante lo permite trasládelo a la entidad hospitalaria más cercana; tener los siguienes documentos:</p>
         <ul>
             <li>Carné estudiantil o certificación expedida por la universidad</li>
             <li>Documento de identificación</li>
         </ul>
         <p>2. Contáctese con las <strong>líneas de asistencia Positiva</strong> para coordinar el servicio de ambulancia y/o recibir información de las entidades hospitalarias que le pueden prestar atención médica necesaria.</p>
+        <input type="text" id="busqueda" placeholder="Buscar lugar...">
         <div id="lista"></div>
     </div>
 
     <!-- Sección de información adicional -->
     <div id="informacion" style="display: none;">
-        <h1>Atención en otras localidades</h1>
+        <h1>Más información</h1>
+        <p>En caso de accidente podrá comunicarse a la línea nacional gratuita de servicio al cliente Positiva 📞 <a href="tel:018000111170" class="telefono-link">01 8000 111 170</a></p>
+        <br>
         <p>En los eventos de estudiantes que necesitan atención en otra localidad diferente a Medellín y dentro del departamento de Antioquía, por favor comunicarse a las líneas de atención:</p>
         <ul class="telefonos">
-           <li>📞 <a href="tel:6013307000" class="telefono-link">601 330 7000</a> </li> 
-           <li>📞 <a href="tel:#533" class="telefono-link">#533 opción 4</a> </li> 
-           <li>📞 <a href="tel:3204948156" class="telefono-link">320 494 8156</a> </li>
-           <li>📞 <a href="tel:3158862282" class="telefono-link">315 886 2282</a> </li> 
+            <li>📞 <a href="tel:6013307000" class="telefono-link">601 330 7000</a> </li> 
+            <li>📞 <a href="tel:#533" class="telefono-link">#533 opción 4</a> </li> 
+            <li>📞 <a href="tel:3204948156" class="telefono-link">320 494 8156</a> </li>
+            <li>📞 <a href="tel:3158862282" class="telefono-link">315 886 2282</a> </li> 
         </ul>
+        
+        <br>
+        <p>Visita las páginas</p>
+        <ul class="telefonos">
+            <li> <a href="https://positiva.gov.co/web/guest/accidente-estudiantil-generacion-p" class="telefono-link">positiva.gov.co</a> </li> 
+            <li> <a href="https://minas.medellin.unal.edu.co/emergencias-bienestar" class="telefono-link">bienestar.unal.edu.co</a> </li> 
+            <li> <a href="https://minas.medellin.unal.edu.co/emergencias-bienestar" class="telefono-link">minas.medellin.unal.edu.co</a> </li> 
+        </ul>
+
     </div>
 
 </body>
