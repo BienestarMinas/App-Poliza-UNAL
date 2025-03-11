@@ -11,9 +11,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.contactos {
-    align-items: center;
-}
 
 h1 {
     font-size: 2rem;
@@ -42,7 +39,7 @@ input[type="text"]:focus {
 #lista {
     width: 90%;
     max-width: 500px;
-    margin-top: 20px;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
