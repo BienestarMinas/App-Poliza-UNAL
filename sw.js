@@ -1,4 +1,4 @@
-const CACHE_NAME = "pwa-cache-v1.4.2"; // Cambia el número en cada actualización
+const CACHE_NAME = "pwa-cache-v1.4.3"; // Cambia el número en cada actualización
 const urlsToCache = [
     "/App-Poliza-UNAL/",
     "/App-Poliza-UNAL/index.html",
