@@ -1,7 +1,7 @@
 /* Fuente moderna y colores suaves */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background: linear-gradient(135deg, #f5f7fa, #b2c4e2);
     color: #333;
     text-align: center;
     padding: 20px;
@@ -43,6 +43,7 @@ input[type="text"]:focus {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center; 
 }
 
 /* Estilos de cada elemento de la lista */
