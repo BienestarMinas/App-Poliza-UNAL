@@ -143,7 +143,6 @@ function normalizarTexto(texto) {
 
 // Función de filtrado rápido
 function filtrarLugares() {
-    console.log('filtrarLugares called'); // Debugging statement
     const criterio = normalizarTexto(document.getElementById('busqueda').value);
     const transaction = db.transaction('lugares', 'readonly');
     const store = transaction.objectStore('lugares');
@@ -152,13 +151,10 @@ function filtrarLugares() {
     store.openCursor().onsuccess = (event) => {
         const cursor = event.target.result;
         if (cursor) {
-            const nombre = cursor.value.nombre || '';
-            const direccion = cursor.value.direccion || '';
-            const telefono = cursor.value.telefono || ''; // No necesita normalización
+            const nombreNormalizado = normalizarTexto(cursor.value.nombre);
+            const direccionNormalizada = normalizarTexto(cursor.value.direccion);
+            const telefono = cursor.value.telefono; // No necesita normalización
             const palabrasClaves = cursor.value.palabras_claves || []; // Si no tiene palabras clave, usar array vacío
-
-            const nombreNormalizado = normalizarTexto(nombre);
-            const direccionNormalizada = normalizarTexto(direccion);
 
             // Verificar si el criterio está en nombre, dirección, teléfono o palabras clave
             if (
@@ -171,19 +167,12 @@ function filtrarLugares() {
             }
             cursor.continue();
         } else {
-            console.log('Filtered places:', lugaresFiltrados); // Debugging statement
             mostrarResultados(lugaresFiltrados);
         }
     };
-
-    transaction.onerror = (event) => {
-        console.error('Transaction error:', event.target.error);
-    };
 }
-
 // Mostrar resultados en la UI
 function mostrarResultados(lugares) {
-    console.log('mostrarResultados called with:', lugares); // Debugging statement
     const lista = document.getElementById('lista');
     lista.innerHTML = '';
 
@@ -202,6 +191,8 @@ function mostrarResultados(lugares) {
         lista.appendChild(item);
     });
 }
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('busqueda').addEventListener('input', filtrarLugares);
