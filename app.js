@@ -76,30 +76,30 @@ function agregarDatosIniciales() {
         {nombre: 'Villavicencio - Servicios Médicos Integrales de Salud Ltda.' , direccion: 'CLL. 32 N.° 40A-40' , telefono: '3204948156', palabras_claves: ['Bogota']},
         {nombre: 'Clínica Servimedicos' , direccion: 'CLL. 32 N.° 40A-40' , telefono: '3204948156', palabras_claves: ['Bogota']},
 
-        //Palmira
-        {nombre: 'Clínica de Fracturas Palmira Ltda.' , direccion: 'Cra. 27 N° 36-68', telefono: '018000111170', palabras_claves: ['palmira']},
-        {nombre: 'Clínica Palma Real' , direccion: 'Cra. 28 N° 44-35', telefono: '018000111170', palabras_claves: ['palmira']},
-        {nombre: 'Dentisalud' , direccion: 'Cra. 28 N° 33-07', telefono: '018000111170', palabras_claves: ['palmira']},
-        {nombre: 'Cali - Clínica Farallones' , direccion: 'Calle 9c N.° 50-25', telefono: '018000111170', palabras_claves: ['palmira']},
-        {nombre: 'Cali - Centro de Ortopedía y Fracturas - COF' , direccion: 'Av. 2N N° 21N-65', telefono: '018000111170', palabras_claves: ['palmira']},
-        {nombre: 'Cali - Clínica Nuestra Señora de Los Remedios' , direccion: 'Av. 2N N° 24-157', telefono: '018000111170', palabras_claves: ['palmira']},
-        {nombre: 'Clínica de Oftalmología de Cali S.A.' , direccion: 'CLL. 38N N.° 6n-35 Local 8-227', telefono: '018000111170', palabras_claves: ['palmira']},
+        // //Palmira
+        // {nombre: 'Clínica de Fracturas Palmira Ltda.' , direccion: 'Cra. 27 N° 36-68', telefono: '018000111170', palabras_claves: ['palmira']},
+        // {nombre: 'Clínica Palma Real' , direccion: 'Cra. 28 N° 44-35', telefono: '018000111170', palabras_claves: ['palmira']},
+        // {nombre: 'Dentisalud' , direccion: 'Cra. 28 N° 33-07', telefono: '018000111170', palabras_claves: ['palmira']},
+        // {nombre: 'Cali - Clínica Farallones' , direccion: 'Calle 9c N.° 50-25', telefono: '018000111170', palabras_claves: ['palmira']},
+        // {nombre: 'Cali - Centro de Ortopedía y Fracturas - COF' , direccion: 'Av. 2N N° 21N-65', telefono: '018000111170', palabras_claves: ['palmira']},
+        // {nombre: 'Cali - Clínica Nuestra Señora de Los Remedios' , direccion: 'Av. 2N N° 24-157', telefono: '018000111170', palabras_claves: ['palmira']},
+        // {nombre: 'Clínica de Oftalmología de Cali S.A.' , direccion: 'CLL. 38N N.° 6n-35 Local 8-227', telefono: '018000111170', palabras_claves: ['palmira']},
         
-        //Manizales
-        {nombre: 'Clínica de la Presentación' , direccion: 'Cra. 23 Calle 46 Esquina', telefono: '018000111170', palabras_claves: ['Manizales']},
-        {nombre: 'Comfamiliar Clínica San Marcel' , direccion: 'Cra 30 N° 93-25', telefono: '018000111170', palabras_claves: ['Manizales']},
-        {nombre: 'Instituto Oftalmológico de Caldas' , direccion: 'CLL. 54 N° 23-140', telefono: '018000111170', palabras_claves: ['Manizales']},
-        {nombre: 'Caja Compensacion Familiar de Caldas Confa Salud' , direccion: 'Cra 30 N° 93-25 Av. Alberto Mendoza', telefono: '018000111170', palabras_claves: ['Manizales']},
-        {nombre: 'Sede San Marcel - Odontología' , direccion: 'Cra 30 N° 93-25 Av. Alberto Mendoza', telefono: '018000111170', palabras_claves: ['Manizales']},
-        {nombre: 'La Dorada - Clínica de Fracturas Vita Ltda.' , direccion: 'CLL. 12 N° 203', telefono: '018000111170', palabras_claves: ['Manizales']},
-        {nombre: 'La Dorada - Clínica Flavio Restrepo S.A.S.' , direccion: 'Calle 12 N°3-28', telefono: '018000111170', palabras_claves: ['Manizales']},
-        {nombre: 'Chinchiná - ESE Hospital San Marcos' , direccion: 'Cra. 9 Calle 16 y 17', telefono: '018000111170', palabras_claves: ['Manizales']},
-        {nombre: 'IPS Servicios Médicos La Camelia Ltda.' , direccion: 'Carrera 23 C #67-05', telefono: '018000111170', palabras_claves: ['Manizales']},        
+        // //Manizales
+        // {nombre: 'Clínica de la Presentación' , direccion: 'Cra. 23 Calle 46 Esquina', telefono: '018000111170', palabras_claves: ['Manizales']},
+        // {nombre: 'Comfamiliar Clínica San Marcel' , direccion: 'Cra 30 N° 93-25', telefono: '018000111170', palabras_claves: ['Manizales']},
+        // {nombre: 'Instituto Oftalmológico de Caldas' , direccion: 'CLL. 54 N° 23-140', telefono: '018000111170', palabras_claves: ['Manizales']},
+        // {nombre: 'Caja Compensacion Familiar de Caldas Confa Salud' , direccion: 'Cra 30 N° 93-25 Av. Alberto Mendoza', telefono: '018000111170', palabras_claves: ['Manizales']},
+        // {nombre: 'Sede San Marcel - Odontología' , direccion: 'Cra 30 N° 93-25 Av. Alberto Mendoza', telefono: '018000111170', palabras_claves: ['Manizales']},
+        // {nombre: 'La Dorada - Clínica de Fracturas Vita Ltda.' , direccion: 'CLL. 12 N° 203', telefono: '018000111170', palabras_claves: ['Manizales']},
+        // {nombre: 'La Dorada - Clínica Flavio Restrepo S.A.S.' , direccion: 'Calle 12 N°3-28', telefono: '018000111170', palabras_claves: ['Manizales']},
+        // {nombre: 'Chinchiná - ESE Hospital San Marcos' , direccion: 'Cra. 9 Calle 16 y 17', telefono: '018000111170', palabras_claves: ['Manizales']},
+        // {nombre: 'IPS Servicios Médicos La Camelia Ltda.' , direccion: 'Carrera 23 C #67-05', telefono: '018000111170', palabras_claves: ['Manizales']},        
 
-        //Caribe (San andres isla)
-        {name: 'Centro de Fisioterapia Integral E. U.' , direccion: 'Av. Barrio Sarie Bay Ed Serranilla 999 Lc 101', telefono: '018000111170', palabras_claves: ['Caribe', 'San Andres isla']},
-        {name: 'Centro Oftalmológico Lynd Newball' , direccion: 'Av. Providencia Cra 2 N° 4-93 Piso 5 Ed. Aniro', telefono: '018000111170', palabras_claves: ['Caribe', 'San Andres isla']},
-        {name: 'IPS Hospital Amor de Patria' , direccion: 'Ubicada en el sector Bahía Hooker, vía San Luis', telefono: '018000111170', palabras_claves: ['Caribe', 'San Andres isla']},
+        // //Caribe (San andres isla)
+        // {name: 'Centro de Fisioterapia Integral E. U.' , direccion: 'Av. Barrio Sarie Bay Ed Serranilla 999 Lc 101', telefono: '018000111170', palabras_claves: ['Caribe', 'San Andres isla']},
+        // {name: 'Centro Oftalmológico Lynd Newball' , direccion: 'Av. Providencia Cra 2 N° 4-93 Piso 5 Ed. Aniro', telefono: '018000111170', palabras_claves: ['Caribe', 'San Andres isla']},
+        // {name: 'IPS Hospital Amor de Patria' , direccion: 'Ubicada en el sector Bahía Hooker, vía San Luis', telefono: '018000111170', palabras_claves: ['Caribe', 'San Andres isla']},
         
 
         //Amazonía
