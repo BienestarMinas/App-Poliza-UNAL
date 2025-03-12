@@ -1,0 +1,2 @@
+{nombre: 'Leticia - Fundación Clínica Leticia', direccion: 'Av. Internacional 605', telefono: '018000111170', palabras_claves: ['Amazonia']},
+{nombre: 'Leticia - Hospital San Rafael de Leticia', direccion: 'CLL. 10 N° 13-78', telefono: '018000111170', palabras_claves: ['Amazonia']},

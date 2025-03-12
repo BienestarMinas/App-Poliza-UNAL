@@ -1,0 +1,4 @@
+{nombre: 'Centro Hospital Divino Niño',direccion: 'Barrio Unión Victoria Frente a los Tanques de Ecopetrol', telefono: '018000111170', palabras_claves: ['Tumaco']},
+{nombre: 'Hospital San Andrés - (Vía Tumaco - Pasto)',direccion: 'Km 23 Inguapi del Carmen', telefono: '018000111170', palabras_claves: ['Tumaco']},
+{nombre: 'Hospital San Gabriel Arcángel (Villagarzón - Putumayo)',direccion: 'Cra. 4 #1-35b', telefono: '018000111170', palabras_claves: ['Tumaco']},
+

@@ -1,0 +1,4 @@
+{nombre: 'Arauca -Hospital San Vicente de Arauca' , direccion: 'Cra. 16 Cll. 15 Esquina' , telefono: '018000111170', palabras_claves: ['Orinoquía']},
+{nombre: 'San José del Guaviare-Hospital San José del Guaviar' , direccion: 'CLL. 12 Carrera 20, Barrio La Esperanza' , telefono: '018000111170', palabras_claves: ['Orinoquía']},
+{nombre: 'Mocoa - Clínica de La Amazonia IPS Ltda' , direccion: 'Cra. 8 N° 7b 22' , telefono: '018000111170', palabras_claves: ['Orinoquía']},
+

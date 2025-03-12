@@ -1,0 +1,11 @@
+{nombre: 'La Paz - Hospital Marino Zuleta', direccion: 'CLL. 6 N° 6-5, Robles', telefono:'018000111170', palabras_claves: ['La Paz']},
+{nombre: 'Valledupar-Clínica Valledupar Ltda', direccion: 'CLL. 16 N° 15-15', telefono:'018000111170', palabras_claves: ['La Paz']},
+{nombre: 'Valledupar - Clínica de Ojos Sociedad Médica Bolivariana Ltda', direccion: 'Cra 15 N° 14-45', telefono:'018000111170', palabras_claves: ['La Paz']},
+{nombre: 'Valledupar - Hospital Rosario Pumarejo de López', direccion: 'CLL. 16 C N° 17-141', telefono:'018000111170', palabras_claves: ['La Paz']},
+{nombre: 'Valledupar - Clínica Erasmo Ltda', direccion: 'Cra 19 N° 4C-72', telefono:'018000111170', palabras_claves: ['La Paz']},
+{nombre: 'Valledupar-Clínica de Fracturas Valledupar S.A.S', direccion: 'Dg 20b 18 d 76 Las Delicias', telefono:'018000111170', palabras_claves: ['La Paz']},
+{nombre: 'El Copey - Palma Salud I. P. S. Ltda', direccion: 'Calle 8 N° 20-50', telefono:'018000111170', palabras_claves: ['La Paz']},
+{nombre: 'Bosconia-Hospital San Juan Bosco', direccion: 'Carrera 16 N° 20-60', telefono:'018000111170', palabras_claves: ['La Paz']},
+{nombre: 'Agustín Codazzi - E. S. E Hospital Agustín Codazzi', direccion: 'CL 14 N° 8-67', telefono:'018000111170', palabras_claves: ['La Paz']},
+{nombre: 'Aguachica-Hospital Regional de Aguachica José David Padilla', direccion: 'CLL 5 N° 30A-56', telefono:'018000111170', palabras_claves: ['La Paz']},
+

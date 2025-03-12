@@ -103,17 +103,32 @@ function agregarDatosIniciales() {
         
 
         //Amazonía
-
-
+        {nombre: 'Leticia - Fundación Clínica Leticia', direccion: 'Av. Internacional 605', telefono: '018000111170', palabras_claves: ['Amazonia']},
+        {nombre: 'Leticia - Hospital San Rafael de Leticia', direccion: 'CLL. 10 N° 13-78', telefono: '018000111170', palabras_claves: ['Amazonia']},
+        
         //Orinoquía
-
+        {nombre: 'Arauca -Hospital San Vicente de Arauca' , direccion: 'Cra. 16 Cll. 15 Esquina' , telefono: '018000111170', palabras_claves: ['Orinoquía']},
+        {nombre: 'San José del Guaviare-Hospital San José del Guaviar' , direccion: 'CLL. 12 Carrera 20, Barrio La Esperanza' , telefono: '018000111170', palabras_claves: ['Orinoquía']},
+        {nombre: 'Mocoa - Clínica de La Amazonia IPS Ltda' , direccion: 'Cra. 8 N° 7b 22' , telefono: '018000111170', palabras_claves: ['Orinoquía']},
 
         //Tumaco
-
+        {nombre: 'Centro Hospital Divino Niño',direccion: 'Barrio Unión Victoria Frente a los Tanques de Ecopetrol', telefono: '018000111170', palabras_claves: ['Tumaco']},
+        {nombre: 'Hospital San Andrés - (Vía Tumaco - Pasto)',direccion: 'Km 23 Inguapi del Carmen', telefono: '018000111170', palabras_claves: ['Tumaco']},
+        {nombre: 'Hospital San Gabriel Arcángel (Villagarzón - Putumayo)',direccion: 'Cra. 4 #1-35b', telefono: '018000111170', palabras_claves: ['Tumaco']},        
 
         //La paz
-
-
+        {nombre: 'La Paz - Hospital Marino Zuleta', direccion: 'CLL. 6 N° 6-5, Robles', telefono:'018000111170', palabras_claves: ['La Paz']},
+        {nombre: 'Valledupar-Clínica Valledupar Ltda', direccion: 'CLL. 16 N° 15-15', telefono:'018000111170', palabras_claves: ['La Paz']},
+        {nombre: 'Valledupar - Clínica de Ojos Sociedad Médica Bolivariana Ltda', direccion: 'Cra 15 N° 14-45', telefono:'018000111170', palabras_claves: ['La Paz']},
+        {nombre: 'Valledupar - Hospital Rosario Pumarejo de López', direccion: 'CLL. 16 C N° 17-141', telefono:'018000111170', palabras_claves: ['La Paz']},
+        {nombre: 'Valledupar - Clínica Erasmo Ltda', direccion: 'Cra 19 N° 4C-72', telefono:'018000111170', palabras_claves: ['La Paz']},
+        {nombre: 'Valledupar-Clínica de Fracturas Valledupar S.A.S', direccion: 'Dg 20b 18 d 76 Las Delicias', telefono:'018000111170', palabras_claves: ['La Paz']},
+        {nombre: 'El Copey - Palma Salud I. P. S. Ltda', direccion: 'Calle 8 N° 20-50', telefono:'018000111170', palabras_claves: ['La Paz']},
+        {nombre: 'Bosconia-Hospital San Juan Bosco', direccion: 'Carrera 16 N° 20-60', telefono:'018000111170', palabras_claves: ['La Paz']},
+        {nombre: 'Agustín Codazzi - E. S. E Hospital Agustín Codazzi', direccion: 'CL 14 N° 8-67', telefono:'018000111170', palabras_claves: ['La Paz']},
+        {nombre: 'Aguachica-Hospital Regional de Aguachica José David Padilla', direccion: 'CLL 5 N° 30A-56', telefono:'018000111170', palabras_claves: ['La Paz']},
+        
+        
       ];
     lugares.forEach(lugar => store.add(lugar));
 }
@@ -161,7 +176,7 @@ function filtrarLugares() {
                 nombreNormalizado.includes(criterio) || 
                 direccionNormalizada.includes(criterio) ||
                 telefono.includes(criterio) ||
-                palabrasClaves.some(palabra => normalizarTexto(palabra).includes(criterio) || criterio.includes(normalizarTexto(palabra)))
+                palabrasClaves.some(palabra => normalizarTexto(palabra).includes(criterio))
             ) {
                 lugaresFiltrados.push(cursor.value);
             }
