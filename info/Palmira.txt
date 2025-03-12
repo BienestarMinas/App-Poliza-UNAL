@@ -1,0 +1,7 @@
+{nombre: 'Clínica de Fracturas Palmira Ltda.' , direccion: 'Cra. 27 N° 36-68', telefono: '018000111170', palabras_claves: ['palmira']},
+{nombre: 'Clínica Palma Real' , direccion: 'Cra. 28 N° 44-35', telefono: '018000111170', palabras_claves: ['palmira']},
+{nombre: 'Dentisalud' , direccion: 'Cra. 28 N° 33-07', telefono: '018000111170', palabras_claves: ['palmira']},
+{nombre: 'Cali - Clínica Farallones' , direccion: 'Calle 9c N.° 50-25', telefono: '018000111170', palabras_claves: ['palmira']},
+{nombre: 'Cali - Centro de Ortopedía y Fracturas - COF' , direccion: 'Av. 2N N° 21N-65', telefono: '018000111170', palabras_claves: ['palmira']},
+{nombre: 'Cali - Clínica Nuestra Señora de Los Remedios' , direccion: 'Av. 2N N° 24-157', telefono: '018000111170', palabras_claves: ['palmira']},
+{nombre: 'Clínica de Oftalmología de Cali S.A.' , direccion: 'CLL. 38N N.° 6n-35 Local 8-227', telefono: '018000111170', palabras_claves: ['palmira']},

@@ -1,0 +1,11 @@
+
+{nombre: 'Clínica de la Presentación' , direccion: 'Cra. 23 Calle 46 Esquina', telefono: '018000111170', palabras_claves: ['Manizales']},
+{nombre: 'Comfamiliar Clínica San Marcel' , direccion: 'Cra 30 N° 93-25', telefono: '018000111170', palabras_claves: ['Manizales']},
+{nombre: 'Instituto Oftalmológico de Caldas' , direccion: 'CLL. 54 N° 23-140', telefono: '018000111170', palabras_claves: ['Manizales']},
+{nombre: 'Caja Compensacion Familiar de Caldas Confa Salud' , direccion: 'Cra 30 N° 93-25 Av. Alberto Mendoza', telefono: '018000111170', palabras_claves: ['Manizales']},
+{nombre: 'Sede San Marcel - Odontología' , direccion: 'Cra 30 N° 93-25 Av. Alberto Mendoza', telefono: '018000111170', palabras_claves: ['Manizales']},
+{nombre: 'La Dorada - Clínica de Fracturas Vita Ltda.' , direccion: 'CLL. 12 N° 203', telefono: '018000111170', palabras_claves: ['Manizales']},
+{nombre: 'La Dorada - Clínica Flavio Restrepo S.A.S.' , direccion: 'Calle 12 N°3-28', telefono: '018000111170', palabras_claves: ['Manizales']},
+{nombre: 'Chinchiná - ESE Hospital San Marcos' , direccion: 'Cra. 9 Calle 16 y 17', telefono: '018000111170', palabras_claves: ['Manizales']},
+{nombre: 'IPS Servicios Médicos La Camelia Ltda.' , direccion: 'Carrera 23 C #67-05', telefono: '018000111170', palabras_claves: ['Manizales']},
+

@@ -1,0 +1,4 @@
+
+{name: 'Centro de Fisioterapia Integral E. U.' , direccion: 'Av. Barrio Sarie Bay Ed Serranilla 999 Lc 101', telefono: '018000111170', palabras_claves: ['Caribe', 'San Andres isla']},
+{name: 'Centro Oftalmológico Lynd Newball' , direccion: 'Av. Providencia Cra 2 N° 4-93 Piso 5 Ed. Aniro', telefono: '018000111170', palabras_claves: ['Caribe', 'San Andres isla']},
+{name: 'IPS Hospital Amor de Patria' , direccion: 'Ubicada en el sector Bahía Hooker, vía San Luis', telefono: '018000111170', palabras_claves: ['Caribe', 'San Andres isla']},
