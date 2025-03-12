@@ -143,6 +143,7 @@ function normalizarTexto(texto) {
 
 // Función de filtrado rápido
 function filtrarLugares() {
+    console.log('filtrarLugares called'); // Debugging statement
     const criterio = normalizarTexto(document.getElementById('busqueda').value);
     const transaction = db.transaction('lugares', 'readonly');
     const store = transaction.objectStore('lugares');
@@ -167,15 +168,19 @@ function filtrarLugares() {
             }
             cursor.continue();
         } else {
+            console.log('Filtered places:', lugaresFiltrados); // Debugging statement
             mostrarResultados(lugaresFiltrados);
         }
     };
+
+    transaction.onerror = (event) => {
+        console.error('Transaction error:', event.target.error);
+    };
 }
-
-
 
 // Mostrar resultados en la UI
 function mostrarResultados(lugares) {
+    console.log('mostrarResultados called with:', lugares); // Debugging statement
     const lista = document.getElementById('lista');
     lista.innerHTML = '';
 
@@ -194,8 +199,6 @@ function mostrarResultados(lugares) {
         lista.appendChild(item);
     });
 }
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('busqueda').addEventListener('input', filtrarLugares);
