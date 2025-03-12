@@ -152,11 +152,14 @@ function filtrarLugares() {
     store.openCursor().onsuccess = (event) => {
         const cursor = event.target.result;
         if (cursor) {
-            const nombreNormalizado = normalizarTexto(cursor.value.nombre);
-            const direccionNormalizada = normalizarTexto(cursor.value.direccion);
-            const telefono = cursor.value.telefono; // No necesita normalización
+            const nombre = cursor.value.nombre || '';
+            const direccion = cursor.value.direccion || '';
+            const telefono = cursor.value.telefono || ''; // No necesita normalización
             const palabrasClaves = cursor.value.palabras_claves || []; // Si no tiene palabras clave, usar array vacío
-            
+
+            const nombreNormalizado = normalizarTexto(nombre);
+            const direccionNormalizada = normalizarTexto(direccion);
+
             // Verificar si el criterio está en nombre, dirección, teléfono o palabras clave
             if (
                 nombreNormalizado.includes(criterio) || 
