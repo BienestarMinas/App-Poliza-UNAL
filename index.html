@@ -31,13 +31,14 @@
     <!-- Sección de contactos -->
     <div id="contactos">
         <h1>Poliza de Emergencia UNAL Positiva</h1>
-        <p>1. Si la condición del estudiante lo permite trasládelo a la entidad hospitalaria más cercana; tener los siguienes documentos:</p>
+        <h2>N° Poliza: <strong id="poliza-number" onclick="copyToClipboard()" >3100024217</strong></h2>
+        <p><strong>1.</strong> Si la condición del estudiante lo permite trasládelo a la entidad hospitalaria más cercana; tener los siguienes documentos:</p>
         <ul>
             <li>Carné estudiantil o certificación expedida por la universidad</li>
             <li>Documento de identificación</li>
         </ul>
-        <p>2. Contáctese con las <strong>líneas de asistencia Positiva</strong> para coordinar el servicio de ambulancia y/o recibir información de las entidades hospitalarias que le pueden prestar atención médica necesaria.</p>
-        <input type="text" id="busqueda" placeholder="Buscar ubicación Poliza...">
+        <p><strong>2.</strong> Contáctese con las <strong>líneas de asistencia Positiva</strong> para coordinar el servicio de ambulancia y/o recibir información de las entidades hospitalarias que le pueden prestar atención médica necesaria.</p>
+        <input type="text" id="busqueda" placeholder="Buscar ubicación Poliza... Ej: Medellín">
         <div id="lista"></div>
     </div>
 
@@ -59,5 +60,13 @@
 
     </div>
 
+    <script>
+        function copyToClipboard() {
+            const text = document.getElementById('poliza-number').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Copied: ' + text);
+            }).catch(err => console.error('Error copying text:', err));
+        }
+    </script>
 </body>
 </html>
