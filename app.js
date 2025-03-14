@@ -32,9 +32,10 @@ function agregarDatosIniciales() {
     const store = transaction.objectStore('lugares');
     const lugares = [
         // Medellin
+        {nombre: 'INVERSIONES MEDICAS DE ANTIOQUIA S.A - CLINICA LAS VEGAS', direccion: 'Calle  2 SUR N° 46-55', telefono: '448 42 10 - 315 90 00 Ext.: 374 - 510 – 508', palabras_claves: ['Antioquia'] },
         {nombre: 'HOSPITAL ALMA MATER DE ANTIOQUIA', direccion: 'CALLE 69 No. 51C-24', telefono: '3223633-3137060956', palabras_claves: ['Antioquia'] },
-        {nombre: 'CLÍNICA OFTALMOLOGICA DE ANTIOQUIA S.A.S', direccion: 'CRA 48 No. 19A-40 P. 11', telefono: '4440090-3152042031-3104149448', palabras_claves: ['Antioquia'] },
-        {nombre: 'CENTRO MÉDICO Y ODONTOLÓGICO ORALSER S.A.', direccion: 'Calle 59 No. 50A-66', telefono: '(094)4445138-3116011715', palabras_claves: ['Antioquia'] },
+        {nombre: 'CLÍNICA OFTALMOLOGICA DE ANTIOQUIA S.A.S', direccion: 'Cr48 N° 19A-40 - Ps. 11', telefono: '4440090-3152042031-3104149448', palabras_claves: ['Antioquia'] },
+        {nombre: 'CENTRO MÉDICO Y ODONTOLÓGICO ORALSER S.A.', direccion: 'Calle 59 No. 50A-66 Cuba con Popayán', telefono: '(094)4445138-3116011715', palabras_claves: ['Antioquia'] },
         {nombre: 'CLÍNICA MEDELLÍN S.A.', direccion: 'Carrera 65 B No. 30-95', telefono: '4020990-3104418944', palabras_claves: ['Antioquia'] },
         {nombre: 'CLÍNICA DE OTORRINOLARINGOLOGÍA DE ANTIOQUIA S.A. –ORLANT S.A', direccion: 'Calle 34 N° 63A-30', telefono: '2658584', palabras_claves: ['Antioquia'] },
         {nombre: 'CENTRO DE ORTOPEDIA Y TRAUMATOLOGIA EL ESTADIO S.A.', direccion: 'Carrera 74 No. 48B – 77', telefono: '2307288-2307288 Ext 129-3136263867', palabras_claves: ['Antioquia'] },
@@ -55,6 +56,21 @@ function agregarDatosIniciales() {
         {nombre: 'FUNDACION CLÍNICA NOEL', direccion: 'CRA. 49 No. 14-30', telefono: '3128318633-6042156', palabras_claves: ['Antioquia'] },
         {nombre: 'UNIVERSIDAD PONTIFICIA BOLIVARIANA', direccion: 'CRA 72A No. 78B-50', telefono: '3167507389-4455900 ext 4507', palabras_claves: ['Antioquia'] },
         {nombre: 'MAS VALOR A TU SALUD S.A.S.', direccion: 'Carrera 75 No. 49-105', telefono: '3175600111-3016030300', palabras_claves: ['Antioquia'] },
+        {nombre: 'Fracturas y RX de Antioquia', direccion: 'Cra. 74 N° 49-11', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'Hospital San Vicente de Paul', direccion: 'Calle 64 N° 51D-154', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'Inversiones Crear Rama S. A. Dentisalud.', direccion: 'CL 45 DN65-115 Lc. 12', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'Rionegro - Fundación San Vicente De Paúl Vda La Convención', direccion: 'Vía Aeropuerto Llano Grande Km 2', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'Rionegro - Sociedad Médica Rionegro Somer', direccion: 'CLL. 38 N° 54A-35', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'Santa Rosa de Osos - Hosp. San Juan de Dios de Santa Rosa de Osos ', direccion: 'Carrera 28 N° 26A - 34', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'Barbosa - Hospital San Vicente de Paúl', direccion: 'Cr. 17 N° 10-34 Sector La Bomba', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'Guarne - ESE Hospital Nuestra Señora de la Candelaria', direccion: 'Cra. 52 N° 52-177', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'Fredonia - E.S.E. Hospital Santa Lucía', direccion: 'CLL. 69 N° 50-220 Vereda El Edén', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'Jardín - ESE Hospital Gabriel Peláez Montoya', direccion: 'CLL. 5 N.° 1-24', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'Piedras Blancas ESE Metrosalud Centro de Salud Santa Helena ', direccion: 'Antiguo Retén Kilómetro 16', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'San Rafael ESE Alonso María Giraldo', direccion: 'Carrera 29 16-189', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'Santa Fé de Antioquia - ESE Hospital San Juan de Dios', direccion: 'CLL. 10 N° 3-24', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'Urrao - ESE Iván Restrepo Gómez', direccion: 'Cra. 32 N.° 23-61', telefono: "018000111170", palabras_claves: ['Antioquia']},
+        {nombre: 'IPS Hospital Pablo Tobón Uribe', direccion: 'Calle 78b #NO. 69 - 240', telefono: "018000111170", palabras_claves: ['Antioquia']},
 
         //Bogotá
         {nombre: 'Hospital Universitario Nacional' , direccion: 'CLL. 44 N° 59-75'  , telefono: '3204948156', palabras_claves: ['Bogota']},
