@@ -1,4 +1,4 @@
-const CACHE_NAME = "pwa-cache-v1.4.7"; // Cambia el número en cada actualización
+const CACHE_NAME = "pwa-cache-v1.4.8"; // Increment this when updating cache
 const urlsToCache = [
     "/App-Poliza-UNAL/",
     "/App-Poliza-UNAL/index.html",
@@ -8,28 +8,49 @@ const urlsToCache = [
     "/App-Poliza-UNAL/unal.png"
 ];
 
+// Install event: Cache the necessary files
 self.addEventListener("install", (event) => {
-    self.skipWaiting(); // Fuerza la activación del nuevo SW inmediatamente
+    event.waitUntil(
+        caches.open(CACHE_NAME).then((cache) => {
+            return cache.addAll(urlsToCache);
+        })
+    );
+    self.skipWaiting(); // Activates the new service worker immediately
 });
 
+// Activate event: Remove old caches, but keep the new one
 self.addEventListener("activate", (event) => {
     event.waitUntil(
         caches.keys().then((cacheNames) => {
             return Promise.all(
                 cacheNames.map((cache) => {
-                    return caches.delete(cache); // Borra las versiones antiguas del caché
+                    if (cache !== CACHE_NAME) {
+                        console.log(`Deleting old cache: ${cache}`);
+                        return caches.delete(cache);
+                    }
                 })
             );
-        }).then(() => {
-            self.clients.claim(); // Activa el nuevo SW inmediatamente para todos los clientes
+        })
+    );
+    self.clients.claim();
+});
+
+// Fetch event: Serve from cache first, fallback to network if not cached
+self.addEventListener("fetch", (event) => {
+    event.respondWith(
+        caches.match(event.request).then((response) => {
+            return response || fetch(event.request).then((networkResponse) => {
+                return caches.open(CACHE_NAME).then((cache) => {
+                    // Cache the new response for future offline use
+                    cache.put(event.request, networkResponse.clone());
+                    return networkResponse;
+                });
+            });
+        }).catch(() => {
+            // Fallback: If request is a navigation request, return cached homepage
+            if (event.request.mode === "navigate") {
+                return caches.match("/App-Poliza-UNAL/index.html");
+            }
         })
     );
 });
-
-// Interceptar las solicitudes
-self.addEventListener("fetch", (event) => {
-    event.respondWith(
-        fetch(event.request).catch(() => caches.match(event.request))
-    );
-});
-
